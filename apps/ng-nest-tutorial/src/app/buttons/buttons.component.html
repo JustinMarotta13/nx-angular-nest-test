@@ -1,0 +1,11 @@
+<div class="container">
+  <span>
+      <input #newMessage type="text"/>
+      <button (click)="setMessage(newMessage.value)" style="margin-left: 20px;">Set Message</button>
+  </span>
+
+  <span class="container-row">
+    <button (click)="getMessage()" style="margin-right: 32px;">Get Message</button>
+    <p style="margin-top: 30px; font-size: 32px;">{{ text }}</p>
+  </span>
+</div>

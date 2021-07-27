@@ -1,0 +1,35 @@
+<div class="container">
+  <span class="container-row">
+    <p>position:</p>
+    <input #position type="number" />
+  </span>
+
+  <span class="container-row">
+    <p>name:</p>
+    <input #name type="text" />
+  </span>
+
+  <span class="container-row">
+    <p>state:</p>
+    <input #state type="text" />
+  </span>
+
+  <span class="container-row">
+    <p>age:</p>
+    <input #age type="number" />
+  </span>
+
+  <button
+    style="margin-left: 20px"
+    (click)="
+      addUser(
+        position.valueAsNumber,
+        name.value,
+        state.value,
+        age.valueAsNumber
+      )
+    "
+  >
+    Add User
+  </button>
+</div>
